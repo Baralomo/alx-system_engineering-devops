@@ -1,2 +1,2 @@
 #!/bin/bash
-count=1; while read -r line && [ $count -lt 3 ]; do ((count++)); done < iacta; echo "$line"
+mapfile -s 2 -n 1 < "$1"; printf '%s' "${MAPFILE[0]}"
