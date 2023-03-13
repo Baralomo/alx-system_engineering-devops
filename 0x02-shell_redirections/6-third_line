@@ -1,2 +1,2 @@
 #!/bin/bash
-mapfile -s 2 -n 1 < "$1"; printf '%s' "${MAPFILE[0]}"
+head -3 iacta | tail -1
